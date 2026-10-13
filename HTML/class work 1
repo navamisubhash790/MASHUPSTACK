@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal introduction page</title>
+</head>
+<body>
+    <h1> ITS ME NAVAMI</h1>
+    <p>My name is navami.Iam 27 years old.Iam married to an IT employee,his name is Alsun sajeev.I have a two year old son,his name is viaan.i always love to spend my free time with my husband and son.coming to my hobbies i enjoy watching movies and listening to music.i love to play indoor games such as snake and ladder,ludo etc.</p>
+    <p>My hobbies are listed below:</p>
+    <ul>
+        <li>watch movies</li>
+        <li>play snake and ladder</li>
+        <li>listening music</li>
+    </ul>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeAOIYJJpDtJlmHbDTRK3i9eAPJRfmvDJiWZ5Jookq3Q&s=10"alt="girl image" width="300" height="200">
+    <a href="https://www.amazon.in/" alt="amazon link"></a>
+    </body>
+    </html>
