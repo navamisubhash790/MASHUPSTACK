@@ -349,9 +349,56 @@ Date  of Birth:
   <input type="submit" value="Submit">
 </form>
 <img src="game.jpg" alt="snake and ladder image" width="500" height="400">
+ <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/gif" href="favicon.gif">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<form>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
 
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+  </fieldset>
+     <label for="browser">Choose your browser: </label>
+    <input list="browsers" id="browser" name="browser">
 
+    <datalist id="browsers">
+        <option value="Google Chrome">
+        <option value="Mozilla Firefox">
+        <option value="Safari">
+        <option value="Microsoft Edge">
+        <option value="Opera">
+    </datalist>
+</body>
+</html>
+</form>
+<font color="red">This is red text using a deprecated tag.</font>
+<form>
+    <!-- Required field -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Email validation -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Password with minlength -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+    <!-- Pattern validation for phone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
    </body>
 </html>
 

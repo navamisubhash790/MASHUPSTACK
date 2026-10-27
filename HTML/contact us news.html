@@ -8,11 +8,11 @@
 <body>
     <h1>Contact Us</h1>
 
-    <form>
+    <form method="get">
         <label for="fullname">NAME</label>
         <input type="text" id="fullname" name="fullname" placeholder="Navami S" required><br><br>
-        <label for="mobnumber">MOBILE NUMBER</label>
-        <input type="number" id="mobnumber" name="mobnumber" placeholder="7907094010" required><br><br>
+       <label for="mobilenumber">MOBILE NUMBER</label>
+       <input type="tel" name="mobilenumber" id="mobilenumber" maxlength="10" placeholder="0123456789" pattern="[0-9]*" required><br><br>
         <label for="communication type">Type of Commuinication</label>
         <select id="communication type" name="communication type">
             <option value="Sales">Sales</option>
@@ -20,12 +20,13 @@
             <option value="Enquiry">Enquiry</option>
             <option value="Advertisement">Advertisement</option>
             <option value="Complaint">Complaint</option><br><br>
-        </select>
-    </form><br><br>
-    <form> 
-        <textarea rows="5" cols="50" name="description"  placeholder= "Have a question?..."></textarea><br>
+        </select><br>
+    
+    
+        <textarea rows="5" cols="50" name="description"  placeholder= "Have a question?..."></textarea><br><br>
         <p>Click Submit</p>
 <input type="submit" name="submit" value="submit">
+<a href="EXAM 1.html">exit</a>
     </form>
     
 </body>
