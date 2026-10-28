@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw1.html</title>
+</head>
+<body>
+    <p id="name"></p> 
+    <p id="age"></p>
+    <p id="stud or not"></p>
+    <script>
+        let named = prompt("enter your name");
+        let aged = Number(prompt("Enter your age") );
+        let bool = prompt("A student or not");
+        document.getElementById("name").innerHTML = ("Enter your name:" + named );
+        document.getElementById("age").innerHTML = ("Enter your age:" + aged);
+        document.getElementById("stud or not").innerHTML = ("A student or not:" + bool );
+        console.log("enter your name" , named);
+        console.log("Enter your age" , aged);
+        console.log("A student or not" , bool);
+    </script>
+    
+</body>
+</html>
