@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample js1.html</title>
+</head>
+<body>
+    <h1>User Details</h1>
+  <p id="name"></p> 
+  <p id="aged"></p>
+ <p id="my name"> </p>
+<p id="my interest"></p>
+
+    <script>
+let named = prompt("Enter your name")
+let age = Number(prompt("Enter your age"))
+let naming = prompt("My name is")
+let interest = prompt("my interest is")
+document.getElementById("name").innerHTML = "Enter your name : " + named;
+document.getElementById("aged").innerHTML = "Enter your age : " + age;
+console.log( "the user entered string is ", named);
+console.log("the user entered age", age);
+document.getElementById("my name").innerHTML = "my name is " + naming;
+document.getElementById("my interest").innerHTML = "my interest is " + interest;
+console.log("my name is" , naming);
+console.log("my interest is" , interest);
+
+    </script>
+
+</body>
+</html>
