@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2.html</title>
+</head>
+<body>
+    <p id="name"></p>
+    <p id="mark1"></p>
+    <p id="mark2"></p>
+    <p id="mark3"></p>
+    <p id="total"></p>
+
+    <script>
+        let named = prompt("Enter your name");
+        let score1 = Number(prompt("Enter 1st mark"));
+        let score2 = Number(prompt("Enter 2nd mark"));
+        let score3 = Number(prompt("Enter 3rd mark"));
+        let sum = Number(prompt("Enter total marks"))
+        document.getElementById("name").innerHTML = ("Enter your name: " + named);
+        document.getElementById("mark1").innerHTML = ("Enter 1st mark: " + score1);
+        document.getElementById("mark2").innerHTML = ("Enter 2nd mark: " + score2);
+        document.getElementById("mark3").innerHTML = ("Enter 3rd mark: " + score3);
+        document.getElementById("total").innerHTML = ("Enter total marks: " + (score1+score2+score3));
+console.log("Enter total marks:" +(score1+score2+score3) );
+    </script>
+
+    
+</body>
+</html>
