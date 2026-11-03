@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Railway ticket fare calculator</h1>
+    <p id="t1"></p>
+    <p id="t2"></p>
+    <p id="t3"></p>
+    <p id="t4"></p>
+    <script>
+        let passengerAge = 65;
+        let ticketFare = 500;
+        let finalFare;
+        let discount;
+        if(passengerAge < 5){
+            finalFare = "free";
+        }
+        else if(passengerAge >= 5 && passengerAge <= 12){
+            finalFare = 50/100 * ticketFare;
+        }
+        else if(passengerAge >= 13 && passengerAge <= 59){
+            finalFare = ticketFare;
+        }
+
+        else { finalFare = 70/100 * ticketFare};
+        discount = ticketFare - finalFare
+        console.log("Passenger age: " + passengerAge);
+        console.log("original fare: " + ticketFare);
+        console.log("Final fare: " + finalFare);
+document.getElementById("t1").innerHTML = ("Passenger age: " + passengerAge)
+document.getElementById("t2").innerHTML = ("original fare: " + ticketFare)
+document.getElementById("t3").innerHTML = ("Final fare: " + finalFare)
+document.getElementById("t4").innerHTML = ("Discount: " + discount)
+
+    </script>
+</body>
+</html>

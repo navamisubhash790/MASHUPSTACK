@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Shopping discount calculator</h1> 
+   <p id="dis1"></p>
+   <p id="dis2"></p>
+   <p id="dis3"></p>
+   <p id="dis4"></p>
+   <script> 
+    let purchaseAmount = 5000;
+    let discountPercentage;
+    if(purchaseAmount >= 5000){
+    discountPercentage = 20;}
+
+    else if
+    (purchaseAmount <= 4999.99 && purchaseAmount >= 3000){
+    discountPercentage = 15;}
+    else if(purchaseAmount <= 2,999.99 && purchaseAmount >=1000){
+    discountPercentage = 10;
+ }
+    else {"No discount"}
+    let discountAmount = purchaseAmount/100 * discountPercentage;
+    let finalAmount = purchaseAmount - discountAmount;
+console.log("Purchase amount: " + purchaseAmount);
+console.log("Discount percentage: " + discountPercentage);
+console.log("Discount amount: " + discountAmount);
+console.log("Final amount: " + finalAmount);
+document.getElementById("dis1").innerHTML = ("Purchase amount: " + purchaseAmount);
+document.getElementById("dis2").innerHTML = ("Discount percentage: " + discountPercentage);
+document.getElementById("dis3").innerHTML = ("Discount amount: " + discountAmount);
+document.getElementById("dis4").innerHTML = ("Final amount: " + finalAmount);
+   </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Grade calculator</h1>
+    <p id="gr"></p>
+    <p id="gr1"></p>
+    <p id="gr2"></p>
+    <p id="gr3"></p>
+    <p id="gr4"></p>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <script>
+        let marks = 86;
+        let grade =""
+            if(marks > 100) {
+            grade = "invalid marks";}
+            else if(marks >= 90) {
+            grade = "A grade";}
+            else if(marks >= 80) {
+            grade = "B grade";}
+            else if(marks >= 70){ 
+            grade = "C grade";}
+            else if(marks >= 40){
+            grade = "D grade"; }
+            else if(marks < 40 && marks >= 0){
+            grade = "F";}
+            else {
+            grade = "invalid marks"}
+            console.log("Marks: " + marks);
+            console.log("Your grade is: " + grade);
+            document.getElementById("gr").innerHTML  = ("Marks: " + marks)
+            document.getElementById("gr1").innerHTML = ("Your grade is: " + grade)
+
+        
+        
+    </script>
+</body>
+</html>

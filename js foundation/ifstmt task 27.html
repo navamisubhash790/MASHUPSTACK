@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Electricity bill calculator</h1>
+    <p id="e1"></p>
+      <p id="e2"></p>
+        <p id="e3"></p>
+          <p id="e4"></p>  
+            <p id="e5"></p>
+            <script>
+                let unitsConsumed = 250;
+                let electricityBill;
+                if(unitsConsumed == 0 ){electricityBill = "no units consumed"}
+                else if(unitsConsumed < 0){electricityBill = "invalid consumption"}
+                else if(unitsConsumed <= 100){
+                    electricityBill = 1.50 * 100;
+                }
+                else if(unitsConsumed <= 200){
+                  electricityBill = (100 * 1.50) + ((unitsConsumed - 100) * 2.50);
+}
+else if (unitsConsumed <= 300) {
+    electricityBill = (100 * 1.50) + (100 * 2.50) + ((unitsConsumed - 200) * 4);
+}
+else {
+    electricityBill = (100 * 1.50) + (100 * 2.50) + (100 * 4) + ((unitsConsumed - 300) * 6);
+}
+
+console.log("Units Consumed: " + unitsConsumed);
+console.log("Electricity Bill: ₹" + electricityBill);
+            </script>
+    
+</body>
+</html>

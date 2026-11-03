@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee work performance</h1>
+    <p id="att1"></p>
+    <p id="att2"></p>
+    <p id="att3"></p>
+    <p id="att4"></p>
+    <script>
+        let attendance = 85;
+        let performanceScore = 92;
+        let evaluation;
+       if(attendance > 75){
+       evaluation = "has the required attendance"}
+        if(performanceScore >= 90){
+        evaluation = "Excellent";}
+       else if(performanceScore >= 75 && performanceScore <= 89){
+        evaluation = "Good";}
+        else if(performanceScore <= 74 && performanceScore >= 50){
+        evaluation = "Average";}
+        
+                else if(performanceScore < 50)
+                {evaluation = "Needs improvement";}
+        
+                else { evaluation ="Attendance not sufficient;"}
+                
+       console.log("Attendance: " + attendance);
+       console.log("Performance score: " + performanceScore);
+       console.log("Evaluation: " + evaluation)
+       document.getElementById("att1").innerHTML = ("Attendance: " + attendance)
+       document.getElementById("att2").innerHTML = ("Performance score: " + performanceScore)
+       document.getElementById("att3").innerHTML = ("Evaluation: " + evaluation)
+
+       
+    </script>
+</body>
+</html>

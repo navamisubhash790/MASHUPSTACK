@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Parking fee calculator</h1>
+    <p id="p1"></p>
+       <p id="p2"></p>
+          <p id="p3"></p>
+             <p id="p4"></p>
+             <script>
+                let parkingHours = 7;
+                let parkingFee;
+                let finalFee;
+                if(parkingHours == 1){
+                    parkingFee = 20;}
+                    else if(parkingHours >= 2 && parkingHours <=5){
+                        parkingFee = 20 + 40;}
+                        else if(parkingHours > 5){
+                            parkingFee = 60 +( parkingHours - 5)*15;}
+                            else {parkingFee = "invalid"
+
+                }
+                console.log("Parking hours: " + parkingHours);
+                console.log("Parking fee: " + parkingFee);
+               
+                document.getElementById("p1").innerHTML = ("Parking hours: " + parkingHours);
+                 document.getElementById("p2").innerHTML = ("Parking fee: " + parkingFee);
+                  
+             </script>
+</body>
+</html>

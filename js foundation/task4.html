@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inverting bolean values</h1>
+    <p id="log"></p>
+    <p id="inlog"></p>
+    <p id="block"></p>
+    <p id="inblock"></p>
+    <p id="email"></p>
+    <p id="inemail"></p>
+    <script>
+        let isloggedin = true;
+        let isblocked = false;
+        let isemailverified =  true;
+        let invertedloggedin = !isloggedin;
+        let invertedisblocked = !isblocked;
+        let invertedemailverified = !isemailverified;
+        console.log("isloggedin: " + isloggedin);
+console.log("invertedloggedin: " + invertedloggedin);
+        console.log("isblocked: " + isblocked);
+        console.log("invertedisblocked: " + invertedisblocked);
+        console.log("isemailverified: " + isemailverified);
+        console.log("invertedemailverified: " + invertedemailverified);
+        document.getElementById("log").innerHTML = (("is logged in: " + isloggedin ));
+        document.getElementById("inlog").innerHTML = (("Inverted logged in: " + invertedloggedin ));
+         document.getElementById("block").innerHTML = (("Is blocked: " + isblocked));
+          document.getElementById("inblock").innerHTML = (("Inverted blocked: " + invertedisblocked));
+          document.getElementById("email").innerHTML = (("Is emailverified: " + isemailverified));
+           document.getElementById("inemail").innerHTML = (("Inverted emailverified: " + invertedemailverified));
+          
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login status message</h1>
+    <p id="status"></p>
+    <p id="logsts"></p>
+    <script>
+        let isloggedin = true;
+
+        let inlogg = !isloggedin ? "please login first" : "welcome back";
+        console.log("Is logged in: " + isloggedin);
+        console.log("login status: " + inlogg)
+        console.log( "the value of inlog: " + inlogg)
+        document.getElementById("status").innerHTML = ("is logged in: " + isloggedin);
+
+        document.getElementById("logsts").innerHTML = ("Login status: " + inlogg);
+
+
+        // let loggedin = true;
+
+        // let inlogged = !loggedin ? "please login" : "welcome back";
+        // console.log("Is logged in: " + loggedin);
+        // console.log("login status: " + inlogged)
+        // document.getElementById("status").innerHTML = ("is logged in: " + loggedin);
+
+        // document.getElementById("logsts").innerHTML = ("Login status: " + inlogged);
+    </script>
+</body>
+</html>

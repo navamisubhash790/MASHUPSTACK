@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Free delivery eligibility</h1>
+    <p id="ord"></p>
+    <p id="ord1"></p>
+    <p id="ord2"></p>
+    <script>
+        let orderAmount = 450;
+        if(orderAmount >= 500) {
+            document.getElementById("ord").innerHTML = ("Free delivery available")
+            console.log("Free delivery available")} else {
+            document.getElementById("ord1").innerHTML = ("Delivery charges apply")
+            console.log("Delivery charges apply")    
+        }
+    </script>
+</body>
+</html>

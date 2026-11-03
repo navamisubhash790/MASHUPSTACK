@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>online shopping discount</h1>
+    <p id="rate"></p>
+    <p id="premium"></p>
+    <p id="delivery"></p>
+    <script>
+        let orderamount = 700;
+        let ispremiummember = true;
+        let isfreedelivery = (orderamount >= 1000) || (ispremiummember) && (orderamount >= 500);
+        console.log(" is the customer eligible for free delivery: " + isfreedelivery);
+        document.getElementById("rate").innerHTML = ("Order amount: " + orderamount);
+        document.getElementById("premium").innerHTML = ("Is premium member:" + ispremiummember);
+        document.getElementById("delivery").innerHTML = ("Is eligible for free delivery: " + isfreedelivery);
+    </script>
+</body>
+</html>

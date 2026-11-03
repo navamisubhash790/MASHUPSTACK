@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bank loan eligibility checker</h1>
+    <p id="b1"></p>
+     <p id="b2"></p>
+      <p id="b3"></p>
+       <p id="b4"></p>
+       <script>
+let age = 25;
+let monthlySalary = 50000;
+let creditScore = 250;
+let loanStatus;
+if(age >= 21){
+    if(monthlySalary >= 25000){
+        if(creditScore >= 700){
+          loanStatus = "loan approved";}
+          else { loanStatus = "loan rejected - insufficient credit score";}}
+          else { loanStatus ="loan rejected - insufficient salary";}}
+          else {loanStatus = "loan rejected - under age";
+        }
+    console.log("Age: " + age);
+    console.log("Monthly salary: " + monthlySalary);
+    console.log("Credit score; " + creditScore);
+    console.log("Loan status: " + loanStatus);
+    document.getElementById("b1").innerHTML = ("Age: " + age)
+     document.getElementById("b2").innerHTML = ("Monthly salary: " + monthlySalary)
+      document.getElementById("b3").innerHTML = ("Credit score; " + creditScore)
+       document.getElementById("b4").innerHTML = ("Loan status: " + loanStatus)
+
+       </script>
+</body>
+</html>
