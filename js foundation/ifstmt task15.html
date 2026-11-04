@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee salary bonus</h1>
+    <p id="sal"></p>
+    <p id="sal1"></p>
+    <p id="sal2"></p>
+    <p id="sal3"></p>
+    <p id="sal4"></p>
+    <script>
+        let performanceScore = 82;
+        let salary = 30000;
+        let bonusPercentage;
+       
+        if(performanceScore <= 100 && performanceScore >= 90) {
+            bonusPercentage = 20;} 
+        else if(performanceScore <= 89 && performanceScore >= 75){
+            bonusPercentage = 10; }
+        else if(performanceScore <= 74 && performanceScore >= 60){
+            bonusPercentage = 5;}
+        else { bonusPercentage = "No bonus"}
+        let bonusAmount = (salary) * bonusPercentage/100;
+        let totalSalary = salary + bonusAmount;
+        console.log("performance score: " + performanceScore);
+        console.log("Salary: " + salary);
+        console.log("Bonus percentage: " + bonusPercentage);
+        console.log("Bonus amount: " + bonusAmount);
+         console.log("total salary: " + totalSalary);
+        document.getElementById("sal").innerHTML = ("Performance score: " + performanceScore);
+        document.getElementById("sal1").innerHTML = ("Salary: " + salary);
+        document.getElementById("sal2").innerHTML = ("Bonus percentage: " + bonusPercentage);
+        document.getElementById("sal3").innerHTML = ("Bonus amount: " + ( (salary) * bonusPercentage/100));
+        document.getElementById("sal4").innerHTML = ("Total salary: " + totalSalary);
+        </script>
+</body>
+</html>

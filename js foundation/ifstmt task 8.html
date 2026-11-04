@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login validation</h1>
+    <p id="user1"></p>
+    <p id="user2"></p>
+    <p id="check"></p>
+    <script>
+        let enteredUsername = "student123";
+        let registeredUsername = "student123";
+        if(enteredUsername == registeredUsername) {
+            document.getElementById("user1").innerHTML = ("Username Verified")
+            console.log("Username Verified")} else {
+            document.getElementById("check").innerHTML = ("Invalid username") 
+            console.log("Invalid username")}
+         </script>
+</body>
+</html>

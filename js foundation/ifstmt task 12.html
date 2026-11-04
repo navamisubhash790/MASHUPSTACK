@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Electricity consumption classification</h1>
+    <p id="el"></p>
+    <p id="el1"></p>
+    <script>
+        let unitsConsumed = 250;
+        let consumptionCategory;
+        if(unitsConsumed < 100 ) {
+        consumptionCategory = "Low consumption";}
+        else if(unitsConsumed <= 300){
+        consumptionCategory = "Moderate consumption";}
+        else {consumptionCategory = "High consumption"}
+        console.log("umits consumed: " + unitsConsumed);
+        console.log("Consumption category: " + consumptionCategory);
+        document.getElementById("el").innerHTML = ("Units consumed: " + unitsConsumed);
+        document.getElementById("el1").innerHTML = ("Consumption category: " + consumptionCategory);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

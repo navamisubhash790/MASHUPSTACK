@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature checker</h1>
+    <p id="temp"></p>
+    <p id="check"></p>
+    <p id="celsius"></p>
+    <p id="challenge"></p>
+    <script>
+        let temperature = 32;
+        let checktemp = temperature >= 35 ? "Very hot" : "Normal temperature";
+let climate = 29;
+let weatherstatus = climate >= 35 ? "Very hot" : climate <= 35 ? "warm" : climate <= 25 ? "cool" :
+        console.log("temperature: "  + temperature);
+        console.log("Hot or Normal temperature: "  + checktemp);
+        document.getElementById("temp").innerHTML = ("Temperature: " + temperature);
+        document.getElementById("check").innerHTML = ("Hot or Normal temperature: " + checktemp  );
+        console.log("Temperature: " + climate);
+        console.log("Temperature hot , normal or cool: " + weatherstatus);
+document.getElementById("celsius").innerHTML = ("Temperature: " + climate);
+document.getElementById("challenge").innerHTML = ("Hot, normal or cool: " + weatherstatus);
+        
+    </script>
+</body> 
+</html>

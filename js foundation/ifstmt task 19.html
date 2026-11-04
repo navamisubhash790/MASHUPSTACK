@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Traffic signal</h1>
+    <p id="sig1"></p>
+    <p id="sig2"></p>
+    <p id="sig3"></p>
+    <p id="sig4"></p>
+ <script>
+    let signalColor = "red";
+    let instruction = "";
+    if(signalColor == "red") { 
+    instruction = "stop";}
+    else if(signalColor == "yellow") {
+    instruction = "Get ready";}
+    else if(signalColor == "green"){
+    instruction = "Go";}
+    else { instruction = "Invalid signal";}
+    console.log("Signal color:  " + signalColor);
+    console.log("Instruction: " + instruction);
+    document.getElementById("sig1").innerHTML = ("Signal color: " + signalColor);
+    document.getElementById("sig2").innerHTML = ("Instruction: " + instruction);
+
+
+    
+    
+ </script>
+
+</body>
+</html>

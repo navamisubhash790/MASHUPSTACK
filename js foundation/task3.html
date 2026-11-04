@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Movie ticket discount</h1>
+    <p id="aged"></p>
+    <p id="stud"></p>
+    <p id="discount"></p>
+    <script>
+        let age = 22;
+        let  isstudent = true;
+        let iseligiblefordiscount = (age >= 60) || (isstudent);
+        console.log("Is eligible for discount: " , iseligiblefordiscount );
+        document.getElementById("aged").innerHTML = ("Enter age: " + age);
+        document.getElementById("stud").innerHTML = ("Is student: " + isstudent);
+        document.getElementById("discount").innerHTML = ("Eligible for discount: " + (((age >= 60) || (isstudent))))
+    </script>
+</body>
+</html>

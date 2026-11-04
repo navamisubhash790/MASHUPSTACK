@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>insurance premium eligibility</h1>   
+ <p id="p1"></p>
+ <p id="p2"></p>
+ <p id="p3"></p>
+ <p id="p4"></p>
+ <script>
+ let age = 30;
+let monthlyIncome = 30000;
+let hasRiskFlag = false;
+
+let insuranceStatus;
+
+if (age >= 18 && age <= 60) {
+
+    if (monthlyIncome >= 20000) {
+
+        if (hasRiskFlag == false) {
+            insuranceStatus = "Eligible";
+        }
+        else {
+            insuranceStatus = "Rejected: Existing Risk Flag";
+        }
+
+    }
+    else {
+        insuranceStatus = "Rejected: Insufficient Monthly Income";
+    }
+
+}
+else {
+    insuranceStatus = "Rejected: Age Not Within Permitted Range";
+}
+
+
+
+
+console.log("Age: " + age);
+console.log("Monthly Income: " + monthlyIncome);
+console.log("Risk Flag: " + hasRiskFlag);
+console.log("Insurance Status: " + insuranceStatus);
+
+
+
+document.getElementById("p1").innerHTML = "Age: " + age;
+document.getElementById("p2").innerHTML = "Monthly Income: " + monthlyIncome;
+document.getElementById("p3").innerHTML = "Risk Flag: " + hasRiskFlag;
+document.getElementById("p4").innerHTML = "Insurance Status: " + insuranceStatus;
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>University scholarship system</h1>
+    <script>
+    let marks = 92;
+    let familyIncome = 250000;
+    let result;
+    if(marks >= 90 && familyIncome < 300000)
+    result = "Merit scholarship";
+else if(marks <= 80 && familyIncome < 200000)
+result = "Academic scholarship";
+else {result = "not eligble"}
+console.log("Marks: " + marks);
+console.log("Family income: " + familyIncome);
+console.log("Result: " + result);
+
+    
+</script>
+</body>
+</html>

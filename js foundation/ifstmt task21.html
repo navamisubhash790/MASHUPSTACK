@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Hospital patient priority classification"></h1>
+    <p id="p1"></p>
+     <p id="p2"></p>
+     <p id="p3"></p>
+     <script>
+        let temperature = 37.5;
+        let patientStatus = "";
+        let tempCategory = "";
+        if(temperature < 0 || temperature > 40){
+            tempCategory = "invalid temperature";
+        }
+        else if(temperature < 36 )  {
+            tempCategory = "Low temperature";}
+            else if(temperature >=36 && temperature <= 37.5){
+                tempCategory = "Normal";
+        }
+        else if(temperature > 37.5 && temperature <= 38.5){
+tempCategory = "Mild fever;"
+        }
+        else {
+            tempCategory = "high fever"}
+        
+      patientStatus = tempCategory;
+      console.log("Temperature: " + temperature);
+      console.log("Temperature category: " + tempCategory);
+      console.log("Patient status: " + patientStatus); 
+      document.getElementById("p1").innerHTML = ("Temperature: " + temperature);
+      document.getElementById("p2").innerHTML = ("Temperature category: " + tempCategory);
+      document.getElementById("p3").innerHTML = ("Patient status: " + patientStatus)
+
+
+     </script>
+     
+</body>
+</html>

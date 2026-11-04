@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Temperature classification</h1>
+    <p id="tem"></p>
+    <p id="tem1"></p>
+    <script>
+        let temperature = 24;
+        let currentTemperature;
+        if(temperature < 10){
+        currentTemperature = "Very cold"}
+        else if(temperature < 20) {
+        currentTemperature = "Cold"} 
+        else if(temperature < 30){
+        currentTemperature = "Pleasant"}
+        else { "Hot"  }
+        console.log("Temperature: " + temperature);
+        console.log("Classification: " + currentTemperature);
+        document.getElementById("tem").innerHTML = ("Temperature: " + temperature);
+        document.getElementById("tem1").innerHTML = ("Classification: " + currentTemperature);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employe leave approval system</h1>
+    <p id="l1"></p>
+     <p id="l2"></p>
+      <p id="l3"></p>
+       <p id="l4"></p>
+        <p id="l5"></p>
+
+       <script>
+let availableLeaves = 8;
+let requestedLeaves = 4;
+let isOnNoticePeriod = false;
+let managerApproval = true;
+let leaveStatus;
+if(isOnNoticePeriod == false){
+if(requestedLeaves <= 0) {
+    leaveStatus = "invalid"}
+else if(requestedLeaves >= availableLeaves){
+    leaveStatus = "leave rejected - not enough leaves"}
+else if(availableLeaves < 5){
+    leaveStatus = "leave rejected - 5 leaves is required min "}
+else if(requestedLeaves <= 3) {
+    leaveStatus = "leave approved"}
+else if(managerApproval == true){
+    leaveStatus = "leave approved"}
+else { "manager approval required"}
+    }
+
+else{"Leave rejected - on notice period"}
+console.log("Available Leaves: " + availableLeaves);
+console.log("Requested Leaves: " + requestedLeaves);
+console.log("Notice Period: " + isOnNoticePeriod);
+console.log("Manager Approval: " + managerApproval);
+console.log("Leave Status: " + leaveStatus);
+document.getElementById("l1").innerHTML = "Available Leaves: " + availableLeaves;
+document.getElementById("l2").innerHTML = "Requested Leaves: " + requestedLeaves;
+document.getElementById("l3").innerHTML = "Notice Period: " + isOnNoticePeriod;
+document.getElementById("l4").innerHTML = "Manager Approval: " + managerApproval;
+document.getElementById("l5").innerHTML = "Leave Status: " + leaveStatus;
+ </script>
+</body>
+</html>

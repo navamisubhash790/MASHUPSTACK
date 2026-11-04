@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student admission system</h1>
+    <p id="ad1"></p>
+     <p id="ad2"></p>
+      <p id="ad3"></p>
+      <script>
+        let marks = 59;
+        let hasPassedEntrance = true;
+        let message;
+        if(marks >= 60) {
+        if(hasPassedEntrance == true) {
+         message = "qualified"}
+         else {
+          message = "not qualified - entrance exam failed;"
+         } 
+        } else {
+        message = "insufficient marks;"
+     }
+    
+    console.log("Marks: " + marks);
+    console.log("Has passed entrance exam: " + hasPassedEntrance);
+    console.log("Message: " + message);
+    document.getElementById("ad1").innerHTML = ("Marks: " + marks);
+    document.getElementById("ad2").innerHTML = ("Has passed entrance: " + hasPassedEntrance);
+    document.getElementById('ad3').innerHTML = ("Message: " + message);
+    
+    
+      </script>
+</body>
+</html>

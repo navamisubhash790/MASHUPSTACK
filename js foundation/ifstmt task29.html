@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <script>
+ let cartItems = 3;
+let orderAmount = 1800;
+let isPaymentSuccessful = true;
+let isAddressVerified = true;
+let deliveryCharges;
+let finalAmount;
+let orderStatus;
+
+if (cartItems == 0) {
+    orderStatus = "Order Rejected: Cart is Empty";
+}
+else if (isPaymentSuccessful == false) {
+    orderStatus = "Order Rejected: Payment Failed";
+}
+else if (isAddressVerified == false) {
+    orderStatus = "Order Rejected: Address Not Verified";
+}
+else {
+    if (orderAmount >= 2000) {
+        deliveryCharges = 0;
+    }
+    else {
+        deliveryCharges = 50;
+    }
+    finalAmount = orderAmount + deliveryCharges;
+     orderStatus = "Order Confirmed";
+}console.log("Cart Items: " + cartItems);
+console.log("Order Amount: " + orderAmount);
+console.log("Payment Successful: " + isPaymentSuccessful);
+console.log("Address Verified: " + isAddressVerified);
+console.log("Delivery Charges: " + deliveryCharges);
+console.log("Final Amount: " + finalAmount);
+console.log("Order Status: " + orderStatus);
+document.getElementById("p1").innerHTML = "Cart Items: " + cartItems;
+document.getElementById("p2").innerHTML = "Order Amount: " + orderAmount;
+document.getElementById("p3").innerHTML = "Payment Successful: " + isPaymentSuccessful;
+document.getElementById("p4").innerHTML = "Address Verified: " + isAddressVerified;
+document.getElementById("p5").innerHTML = "Delivery Charges: " + deliveryCharges;
+document.getElementById("p6").innerHTML = "Final Amount: " + finalAmount;
+document.getElementById("p7").innerHTML = "Order Status: " + orderStatus;
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Voting eligibility checker</h1>
+    <p id="aged"></p>
+    <p id="vote"></p>
+    <script> 
+        let age = 17;
+        let votingstatus = (age >= 18) ? "Eligible to vote " : "Not eligible to vote";
+        console.log("Eligible to vote or not: " + votingstatus) ;
+        document.getElementById("aged").innerHTML = ("Age: " + age);
+        document.getElementById("vote").innerHTML = ("Voting status: " + votingstatus);
+    </script>
+</body>
+</html>

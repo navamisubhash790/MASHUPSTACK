@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Mobile data usage alert system</h1> 
+   <p id="m1"></p>
+   <p id="m2"></p>
+   <p id="m3"></p>
+   <p id="m4"></p>
+   <script>
+    let dataUsed = 110;
+    let dataLimit = 100;
+    let dataStatus;
+    let remainingData;
+
+    if(dataUsed < 50){ 
+dataStatus = "Normal usage"
+    }
+   else if(dataUsed >= 50 && dataUsed <= 79){
+        dataStatus = "Moderate usage"
+    }
+else if(dataUsed >= 80 && dataUsed <= 99){
+    dataStatus = "Warning! data almost exhausted"
+}
+else {dataStatus ="Data limit exceeded"}
+remainingData = dataLimit - dataUsed
+console.log("Data used: " + dataUsed);
+console.log("Data limit: " + dataLimit);
+console.log("Data status: " + dataStatus);
+console.log("Remaining data: " + remainingData);
+document.getElementById("m1").innerHTML = ("Data used: " + dataUsed)
+document.getElementById("m2").innerHTML = ("Data limit: " + dataLimit)
+document.getElementById("m3").innerHTML = ("Data status: " + dataStatus)
+document.getElementById("m4").innerHTML = ("Remaining data: " + remainingData)
+   </script>
+</body>
+</html>

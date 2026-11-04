@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pass or fail</h1>
+    <p id="score"></p>
+    <p id="report"></p>
+    <p id="good"></p>
+    <p id="grading"></p>
+    <script>
+        let marks = 35;
+        let pors = (marks >= 40) ? "passed" : "failed";
+        console.log("marks: " + marks);
+        console.log("pass or fail: " + pors);
+        document.getElementById("score").innerHTML = ("Marks: " + marks);
+        document.getElementById("report").innerHTML = ("Pass or fail: " + pors )
+        let points = 75;
+        let grade = points >= 90 ? "grade A" : points >= 75 ? "grade B" : points >= 50 ? "grade C" : points <=50 ? "grade D" : "Fail"
+    console.log("Marks: " + points);
+    console.log("Grade: " + grade);
+    document.getElementById("good").innerHTML = ("Marks: " + points);
+    document.getElementById("grading").innerHTML = ("Grade: " + grade);
+
+    </script>
+</body>
+</html>

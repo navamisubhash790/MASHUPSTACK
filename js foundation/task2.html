@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Student Eligibility Checker</h1>  
+
+<p id="marks"></p>
+<p id="att"></p>
+<p id="result"></p>
+<p id="eligible"></p>
+<script>
+    let score = 86;
+    let attendance = 98;
+    let iseligible = (score >= 86) && (attendance >= 95);
+    console.log("is eligible or not: " + iseligible)
+    document.getElementById("result").innerHTML = ("the student is eligible or not: " + iseligible)
+    document.getElementById("eligible").innerHTML = ("Congratulations! you are eligible for the scholarship" ) 
+</script>
+</body>
+</html>
