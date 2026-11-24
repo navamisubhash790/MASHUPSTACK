@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+   
+    <h6 class="display-4">Feedback Form</h6>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="fname" >
+         </div>
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+         </div>
+         <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea class="form-control" rows="3" id="comment"></textarea>
+
+         </div>
+         <div class="dropdown">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">How did you find the site </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="home.html">Through a friend</a>
+                <a class="dropdown-item" href="home.html">Unknowingly</a>
+                <a class="dropdown-item" href="home.html">other</a>
+            </div>
+         </div><br>
+         <div class="form-group">
+            <label for="satisfied">Satisfaction level</label>
+         <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="op1">Fully satisfied
+
+            </label>
+         </div>
+         <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="op2">Satisfied
+            </label>
+         </div>
+         <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="op3">Neutral
+            </label>
+         </div>
+         <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="op4">Not satisfied
+
+            </label>
+         </div>
+         <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="op5">Very unsatisfied
+            </label>
+         </div>
+         </div><br>
+         <button type="submit" class="btn btn-info justify-content-center">Submit</button>
+</div>
+</div>
+</body>
+</html>
