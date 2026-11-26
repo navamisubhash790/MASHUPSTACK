@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+  
+  <div class="container my-4">
+    <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner rounded-3">
+        
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="https://picsum.photos/id/1015/1200/500" class="d-block w-100" alt="River valley">
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+            <h5>Summer Escape: 20% Off</h5>
+            <p class="mb-2">Relax in the countryside this season.</p>
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal1">Book Now</button>
+          </div>
+        </div>
+
+        
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="https://picsum.photos/id/1018/1200/500" class="d-block w-100" alt="Mountains">
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+            <h5>Mountain Adventures</h5>
+            <p class="mb-2">Hiking packages starting at $299.</p>
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal2">Book Now</button>
+          </div>
+        </div>
+
+        
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="https://picsum.photos/id/1039/1200/500" class="d-block w-100" alt="Waterfall">
+          <div class="carousel-caption bg-dark bg-opacity-50 rounded p-3">
+            <h5>Weekend Getaways</h5>
+            <p class="mb-2">Short trips, big memories.</p>
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal3">Book Now</button>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
+
+  
+  <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Summer Escape: 20% Off</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">3 nights in a countryside resort, breakfast included. Valid for bookings until August 31.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Mountain Adventures</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">4-day guided hiking trip with gear rental and meals. Starting at $299 per person.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Weekend Getaways</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">2-night stays at top destinations near you, with free cancellation up to 48 hours before.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</body>
+</html>
